@@ -4,7 +4,8 @@
 
 body {
     font-family: Arial;
-    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header {
@@ -69,7 +70,6 @@ nav li a:hover {
 .post {
     background-color: lightgrey;
     height: 200px;
-    width: 100%;
     padding: 10px;
     margin: 20px;
 }
@@ -126,7 +126,7 @@ footer #right a {
 }
 
 @media screen and (max-width: 600px) {
-    nav, footer {
+    nav ul, footer {
         flex-direction: column;
     }
 }

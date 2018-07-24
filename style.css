@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 a{
+    text-decoration: none;
+    font-size: 50px;
+}
+
+header h1 a span{
+    color: black;
+}
+
+header h1 a:link, header h1 a:visited {
+    color: darkgray;
+}
+
+header h1 a:hover, header h1 a:active {
+    color: black;
+}
+
+header h2 {
+    color: gray;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: right;
+}
+
+nav li #prf {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: gray;
+}
+
+.post {
+    background-color: lightgrey;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.post h3 {
+    text-align: center;
+}
+
+.post h4 {
+    text-align: right;
+}
+
+.contents_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.content h3 {
+    padding: 10px;
+}
+
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px;
+    vertical-align: middle;
+    flex: 23.75%;
+    max-width: 23.75%;
+    min-width: 300px;
+}
+
+.content img {
+    width: 100%;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: gray;
+    padding: 10px;
+    display: flex;
+}
+footer #left {
+    flex: 60%;
+}
+
+footer #right {
+    flex: 40;
+    text-align: right;
+}
+
+footer #right a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav, footer {
+        flex-direction: column;
+    }
+}
